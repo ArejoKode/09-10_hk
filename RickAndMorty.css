@@ -1,0 +1,42 @@
+body{
+margin: 0;
+padding: 0%;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(242, 163, 16);
+    height: 70px;
+
+}
+.header-img{
+    height: 45px;
+    width: auto;
+    padding-left: 5px;
+}
+.header-mark{
+    align-content: end;
+}
+.header-icons{
+    width: 207px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 135px;
+}
+.header-icons img{
+    cursor: pointer;
+}
+ 
+.header-close{
+    height: 45px;
+    width: auto;
+}
+h1{
+  
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+
+
+}
