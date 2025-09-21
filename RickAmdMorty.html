@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Morty's Holes</title>
     <link rel="stylesheet"href="RickAndMorty.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Saira:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <header class="header">
@@ -12,18 +14,58 @@
             <img src="./image/pngfind.com-rick-and-morty-portal-165525.png" class="header-img" >
        </div>
        <div class="header-icons">
-            <img src="./image/responsive-desktop.png">
-            <img src="./image/responsive-laptop.png">
-            <img src="./image/responsive-tablet.png">
-            <img src="./image/responsive-phone-horizontal.png">
-            <img src="./image/responsive-phone.png">
+           <img src="./image/responsive-desktop.png" data-device="desktop" alt="Desktop">
+        <img src="./image/responsive-laptop.png" data-device="laptop" alt="Laptop">
+        <img src="./image/responsive-tablet.png" data-device="tablet" alt="Tablet">
+        <img src="./image/responsive-phone-horizontal.png" data-device="phone-land" alt="Phone 横">
+        <img src="./image/responsive-phone.png" data-device="phone-portrait" alt="Phone 直">
        </div>     
        <div>
         <img src="./image/pngkey.com-rick-and-morty-png-36968.png" class="header-close">
        </div>
     </header>
-    <h1>
-        Hosting is even better with all these FREE features
-    </h1>
+    <div class="content">    
+        <h1>
+        Hosting is even better with all these FREE features  
+        </h1>
+        <div class="sub-text">
+            <p>Sample text. Click to select the text box. Click again or</p>
+            <p>double click to start editing the text.</p>
+      
+            <div class="www desktop">
+                <div class="block1 block">
+                    <img src="./image/rick-and-morty-app-icons-pack-ICONS-wallpapers-clan-com/Tinder.png">
+                    <p class="p1" >Unlimited storage</p>
+                    <P class="p2">Lorem ipsum dolor sit amet, consectetur adipiscing</P>
+                    <P class="p2">elit nullam nunc justo sagittis suscipit ultrices.</P>
+                </div>
+                <div class="block2 block"> <img src="./image/rick-and-morty-app-icons-pack-ICONS-wallpapers-clan-com/Reddit.png">
+                    <p class="p1" >Unlimited storage</p>
+                    <P class="p2">Lorem ipsum dolor sit amet, consectetur adipiscing</P>
+                    <P class="p2">elit nullam nunc justo sagittis suscipit ultrices.</P></div>
+                <div class="block3 block">          <img src="./image/rick-and-morty-app-icons-pack-ICONS-wallpapers-clan-com/Motherboard.png">
+                    <p class="p1" >Unlimited storage</p>
+                    <P class="p2">Lorem ipsum dolor sit amet, consectetur adipiscing</P>
+                    <P class="p2">elit nullam nunc justo sagittis suscipit ultrices.</P></div>
+                <div class="block4 block">          <img src="./image/rick-and-morty-app-icons-pack-ICONS-wallpapers-clan-com/Gwendolyn-Doll.png">
+                    <p class="p1" >Unlimited storage</p>
+                    <P class="p2">Lorem ipsum dolor sit amet, consectetur adipiscing</P>
+                    <P class="p2">elit nullam nunc justo sagittis suscipit ultrices.</P></div>
+            </div>
+    </div>
+   <script>
+const icons = document.querySelectorAll('.header-icons img');
+const www = document.querySelector('.www')
+
+icons.forEach(icon => {
+  icon.addEventListener('click', () => {
+    
+    www.classList.remove('desktop', 'laptop', 'tablet', 'phone-land', 'phone-portrait');
+
+    www.classList.add(icon.dataset.device);
+  });
+});
+</script>
+
 </body>
 </html>

@@ -14,15 +14,19 @@ padding: 0%;
     height: 45px;
     width: auto;
     padding-left: 5px;
+        cursor: pointer;
+
 }
-.header-mark{
-    align-content: end;
-}
+
 .header-icons{
     width: 207px;
     display: flex;
     justify-content: space-between;
     padding-right: 135px;
+    
+}
+.header-icons img:hover {
+  transform: scale(1.1);
 }
 .header-icons img{
     cursor: pointer;
@@ -31,12 +35,95 @@ padding: 0%;
 .header-close{
     height: 45px;
     width: auto;
+        cursor: pointer;
+
+}
+.content{
+    max-width: 800px;
+    margin: 60px auto;
+
 }
 h1{
+   
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-size: 50px;
+    
+    
   
-  font-family: "Bebas Neue", sans-serif;
+}
+.sub-text {
+    text-align: right;
+}
+.www {
+      display: flex;              
+  justify-content: space-between; 
+  flex-wrap: wrap;              \
+  margin-top: 40px;
+  gap: 20px;    
+}
+.www img{
+    margin-top: 20px;
+    width: 80px;
+    height: auto;
+}
+.block{
+    text-align: center;
+    background-color: pink;
+    height: 220px;    
+}
+  .p1{
+  font-family: "Bitcount Grid Double Ink", system-ui;
+  font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
+  color: white;
+  font-variation-settings:
+    "slnt" 0,
+    "CRSV" 0.5,
+    "ELSH" 0,
+    "ELXP" 0,
+    "SZP1" 0,
+    "SZP2" 0,
+    "XPN1" 0,
+    "XPN2" 0,
+    "YPN1" 0,
+    "YPN2" 0;
+}
+ .p2{
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 3px;
+}
+
+.block1 { background-color: pink; }
+.block2 { background-color: rgb(242, 163, 16); }
+.block3 { background-color: rgb(242, 163, 16); }
+.block4 { background-color: pink; }
 
 
+.desktop .block {
+  width: 370px;
+}
+
+.laptop .block {
+  width: 370px;
+}
+
+.tablet .block {
+  width: 700px;
+}
+
+.phone-land .block {
+  width: 700px;
+  height:250px;
+}
+
+.phone-portrait .block {
+  width:700px;
+  height:280px;
+}
+@media (max-width:768px) {
+    .block { flex: 1 1 100%; } /* 小螢幕一行一個 */
 }
